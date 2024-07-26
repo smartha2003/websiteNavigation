@@ -1,3 +1,14 @@
+/* App.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +46,221 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+main {
+  flex: 1;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-nav {
+  background-color: #333;
+  color: white;
+  padding: 1em;
+}
+
+.top-nav .logo {
+  height: 50px;
+}
+
+.top-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.top-nav ul li {
+  margin: 0 1em;
+}
+
+.top-nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.side-nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 200px;
+  background-color: #333;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.side-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-nav ul li {
+  margin: 1em 0;
+}
+
+.side-nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-nav {
+  background-color: #333;
+  color: white;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0; 
+  width: 100%; 
+}
+
+.footer-content {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.footer-about, .footer-contact, .footer-social {
+  margin: 0 1em;
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-about h3, .footer-contact h3, .footer-social h3 {
+  border-bottom: 1px solid #28373c;
+  padding-bottom: 0.5em;
+}
+
+.footer-about p, .footer-contact address, .footer-social ul {
+  margin: 1em 0;
+}
+
+.footer-social ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-social ul li {
+  margin: 0.5em 0;
+}
+
+.footer-social ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.footer-social ul li a:hover {
+  text-decoration: underline;
+}
+
+.dropdown-nav {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-nav button {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 1em;
+  cursor: pointer;
+}
+
+.dropdown-nav ul {
+  display: none;
+  position: absolute;
+  background: #333;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 200px; 
+  top: 100%; 
+  left: 50%; 
+}
+
+.dropdown-nav ul li {
+  margin: 0;
+}
+
+.dropdown-nav ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+}
+
+.dropdown-nav button:focus + ul,
+.dropdown-nav:hover ul {
+  display: block;
+}
+
+.hamburger-menu {
+  position: relative;
+}
+
+.hamburger-menu .hamburger {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 1em;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.hamburger-menu ul {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #333;
+  width: 200px;
+  top: 100%;
+  left: 50%; 
+}
+
+.hamburger-menu ul li {
+  margin: 0;
+}
+
+.hamburger-menu ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+}
+
+.hamburger-menu button:focus + ul,
+.hamburger-menu:hover ul {
+  display: block;
+}
+
+.sticky-nav {
+  background-color: #333;
+  color: white;
+  padding: 1em;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.sticky-nav.sticky {
+  background: #555;
 }

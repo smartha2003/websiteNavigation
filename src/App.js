@@ -1,30 +1,33 @@
-import logo from './logo.svg';
+// src/App.js
+import React from 'react';
 import './App.css';
+import TopNavigationBar from './components/TopNavigationBar.js';
+import SideNavigationBar from './components/SideNavigationBar';
+import FooterNavigation from './components/FooterNavigation';
+import DropdownNavigationBar from './components/DropdownNavigationBar';
+import HamburgerMenu from './components/HamburgerMenu';
+import StickyNavigation from './components/StickyNavigation';
 
 function App() {
   return (
     <div>
-      <header>
-        <nav>
-          <img src={logo} alt="Logo" className="logo" />
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#resources">Resources</a></li>
-          </ul>
-        </nav>
-      </header>
+      <TopNavigationBar />
+      {/* <SideNavigationBar /> */}
+      <StickyNavigation />
+      <HamburgerMenu />
+      <DropdownNavigationBar />
       <main>
-        <section role="region" aria-labelledby="about" id="about">
+        <section id="about">
           <h2>About</h2>
         </section>
-        <section role="region" aria-labelledby="contact" id="contact">
+        <section id="contact">
           <h2>Contact</h2>
         </section>
-        <section role="region" aria-labelledby="resources" id="resources">
+        <section id="resources">
           <h2>Resources</h2>
         </section>
       </main>
+      <FooterNavigation />
     </div>
   );
 }
