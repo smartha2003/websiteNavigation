@@ -1,4 +1,4 @@
-# This a Code Base to help with understanding single page website navigation
+# This a Code Base to help you understand single page website navigation
 This project uses basic anchors to navigate to different sections of the website.
 
 Here are the slides that go with this repo:
