@@ -14,8 +14,8 @@ Here are the slides that go with this repo:
 
 # How to run the Repo
 
-Step 1: Clone the repository
-Step 2: cd into websiteNavigation folder
-Step 3: run `npm install`
-Step 4: run `npm start`
+Step 1: Clone the repository  
+Step 2: cd into websiteNavigation folder  
+Step 3: run `npm install`  
+Step 4: run `npm start`  
 Step 5: Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
